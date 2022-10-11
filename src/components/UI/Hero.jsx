@@ -1,17 +1,17 @@
-import React,{ useEffect } from "react";
+import React, { useEffect } from "react";
 import heropic from "../../assets/2112.w026.n002.1265B.p1.1265.jpg";
 
 export default function Hero() {
   useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
     script.async = true;
     script.defer = true;
     document.body.appendChild(script);
     return () => {
       document.body.removeChild(script);
-    }
-}, []);
+    };
+  }, []);
   return (
     <div name="home" className="w-full h-[90vh] top-[90px]">
       <img

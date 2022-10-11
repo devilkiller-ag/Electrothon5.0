@@ -58,32 +58,32 @@ export default function Navbar() {
         <div
           className={
             nav
-              ? "w-full bg-black text-white absolute top-[90px] left-0 flex justify-center text-center"
+              ? "w-full h-screen bg-black text-white absolute top-[90px] left-0 flex justify-center text-center"
               : "absolute left-[-100%]"
           }
         >
-          <ul>
-            <li className="text-xl">
+          <ul className="mt-[5rem]">
+            <li className="text-xl mb-[1.7rem]">
               <Link to="home" smooth={true} duration={500}>
                 HOME
               </Link>
             </li>
-            <li className="text-xl">
+            <li className="text-xl mb-[1.7rem]">
               <Link to="about" smooth={true} offset={-200} duration={500}>
                 ABOUT
               </Link>
             </li>
-            <li className="text-xl">
+            <li className="text-xl mb-[1.7rem]">
               <Link to="prizes" smooth={true} offset={-50} duration={500}>
                 PRIZES
               </Link>
             </li>
-            <li className="text-xl">
+            <li className="text-xl mb-[1.7rem]">
               <Link to="FAQ" smooth={true} offset={-100} duration={500}>
                 FAQ
               </Link>
             </li>
-            <li className="text-xl">
+            <li className="text-xl mb-[1.7rem]">
               <Link to="Contact Us" smooth={true} offset={-50} duration={500}>
                 CONTACT US
               </Link>
